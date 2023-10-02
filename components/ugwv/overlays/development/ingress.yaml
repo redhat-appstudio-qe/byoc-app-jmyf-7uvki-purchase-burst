@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: ugwv
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ugwv
+    app.kubernetes.io/part-of: byoc-app-jmyf
+  name: ugwv
+spec:
+  rules:
+  - host: ugwv-byoc-grrj-tenant.apps.9d5a2b29b6a9dc790317.hypershift.aws-2.ci.openshift.org
+    http:
+      paths:
+      - backend:
+          service:
+            name: ugwv
+            port:
+              number: 8081
+        path: /
+        pathType: ImplementationSpecific
+status:
+  loadBalancer: {}

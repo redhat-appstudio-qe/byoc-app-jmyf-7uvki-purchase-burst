@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ugwv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-grrj-tenant/byoc-app-jmyf/ugwv@sha256:7bce08797164ef09b7fb8b77170920a1b7ec42c162e4b82f6efa6d50aa3c41cd
+        name: my-java-quarkus
+        resources: {}
+status: {}
