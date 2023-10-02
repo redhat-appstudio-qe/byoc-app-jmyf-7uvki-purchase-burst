@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ugwv
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-grrj-tenant/byoc-app-jmyf/ugwv@sha256:7bce08797164ef09b7fb8b77170920a1b7ec42c162e4b82f6efa6d50aa3c41cd
         name: my-java-quarkus
         ports:
         - containerPort: 8081
